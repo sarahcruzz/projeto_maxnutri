@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/be07557a2e.js" crossorigin="anonymous"></script>
+    <script src="./js/data.js" defer></script>
+    <title> Minhas Compras </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+
+            <div class="logo">
+               
+                <a href="index.html"> <img src="/img/logo.png" alt="logo superior"> </a>
+            </div>
+
+            <div class="itensHome">
+                <div class="botoes">
+                    <ul id="botoesHome">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="sobre nós.html"> Sobre Nós </a></li>
+                        <li><a href="produtos.html"> Produtos </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="barra-pesquisa">
+                <input type="search" class="pesquisa" placeholder="Faça sua pesquisa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                
+            </div>
+             
+            <div class="icon-compra">
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                <a href="compras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+        </nav>
+        <div class="linha-superior"></div>
+    </header>
+
+    <main class="main-carrinho">
+        <div class="page-title">Seu Carrinho</div>
+        <div class="content">
+          <section>
+            <table>
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Preço</th>
+                  <th>Quantidade</th>
+                  <th>Total</th>
+                  <th>-</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="product">
+                      <img src="./img/Imagens_produto/aminoacidos/aminoacido.png" alt="" />
+                      <div class="info">
+                        <div class="name">Creatina CreaPure</div>
+                        <div class="category">Aminoácidos</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>R$ 120</td>
+                  <td>
+                    <div class="qty">
+                      <button><i class="fa-solid fa-minus"></i></button>
+                      <span>2</span>
+                      <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                  </td>
+                  <td>R$ 240</td>
+                  <td>
+                    <button class="remove"><i class="fa-solid fa-trash-can"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product">
+                      <img src="./img/Imagens_produto/proteina/isolado.png" alt="" />
+                      <div class="info">
+                        <div class="name">Whey Protein Isolado</div>
+                        <div class="category"> Proteína</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>R$ 120</td>
+                  <td>
+                    <div class="qty">
+                      <button><i class="fa-solid fa-minus"></i></button>
+                      <span>2</span>
+                      <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                  </td>
+                  <td>R$ 240</td>
+                  <td>
+                    <button class="remove"><i class="fa-solid fa-trash-can"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product">
+                      <img src="./img/Imagens_produto/vitaminas/vitamina.png" alt="" />
+                      <div class="info">
+                        <div class="name"> Multivitamínico </div>
+                        <div class="category">Vitamina</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>R$ 120</td>
+                  <td>
+                    <div class="qty">
+                      <button><i class="fa-solid fa-minus"></i></button>
+                      <span>2</span>
+                      <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                  </td>
+                  <td>R$ 240</td>
+                  <td>
+                    <button class="remove"><i class="fa-solid fa-trash-can"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <aside>
+            <div class="box">
+              <header>Resumo da compra</header>
+              <div class="info">
+                <div><span>Sub-total</span><span>R$ 480</span></div>
+                <div><span>Frete</span><span>Gratuito</span></div>
+                <div>
+                    <button>
+                        Adicionar cupom de desconto
+                        <i class="fa-solid fa-arrow-right"></i>              
+                    </button>
+                </div>
+              </div>
+              <footer>
+                <span>Total</span>
+                <span>R$ 480</span>
+              </footer>
+            </div>
+            <button>Finalizar Compra</button>
+          </aside>
+        </div>
+      </main>
+
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>MaxNutri Suplementos </h4>
+                <ul id="foot">
+                    <li><a href="sobre nós.html">Sobre Nós</a></li>
+                    <li><a href="produtos.html">Nossos Produtos</a></li>
+                    <li><a href="compras.html">Suas Compras</a></li>
+                </ul>
+            </div>
+           
+            <div class="footer-col">
+                <h4>Categorias</h4>
+                <ul id="foot">
+                    <li><a href="produtos.html#prod-proteinas">Proteínas</a></li>
+                    <li><a href="produtos.html#prod-vitaminas">Vitaminas</a></li>
+                    <li><a href="produtos.html#prod-aminoacidos">Aminoácidos</a></li>
+                </ul>
+            </div>
+                <div class="footer-col">
+                    <h4>Nossas Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    
+       </footer>
+    
+</body>
+</html>
