@@ -226,8 +226,13 @@ nav a{
     border-radius: 6px;
 }
 
-.button-compra{
+#btn-compraa{
     display: flex;
+    justify-content: space-evenly;
+
+}
+
+.button-compra{
     align-items: center;
 }
 

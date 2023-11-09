@@ -78,15 +78,19 @@ const grid_produto = document.querySelector(".lista-produtos")
 for(let i = 0; i < 3; i++){
     let prod = catalogo[i]
     let produto = ` <div class="produto">
-                        <div class="img-produto">
-                        <img src="${prod.imagem_produto}" alt="produto-7">
-                        
-                    </div>
-                    <h1> ${prod.nome_produto}</h1>
-                    <p>R$ ${prod.preco_produto}</p>
-                    <p>${prod.opcoes_compra}</p>
-                    <button class="button-compra"> Comprar </button>
-                    </div> `
+    <div class="img-produto">
+        <img src="${prod.imagem_produto}" alt="produto-7">
+    </div>
+
+    <h1> ${prod.nome_produto}</h1>
+    <p>R$ ${prod.preco_produto}</p>
+    <p>${prod.opcoes_compra}</p>
+
+    <div id="btn-compraa">
+        <button class="button-compra"> Comprar </button>
+        <button class="button-compra"> Adicionar ao Carrinho </button>
+    </div>
+</div> `
 grid_produto.innerHTML += produto
 }
 
@@ -96,15 +100,19 @@ const grid_produto2 = document.querySelector(".lista-produtos2")
 for(let i = 3; i < 6; i++){
     let prod = catalogo[i]
     let produto = ` <div class="produto">
-                        <div class="img-produto">
-                        <img src="${prod.imagem_produto}" alt="produto-7">
-                        
-                    </div>
-                    <h1> ${prod.nome_produto}</h1>
-                    <p>R$ ${prod.preco_produto}</p>
-                    <p>${prod.opcoes_compra}</p>
-                    <button class="button-compra"> Comprar </button>
-                    </div> `
+    <div class="img-produto">
+        <img src="${prod.imagem_produto}" alt="produto-7">
+    </div>
+
+    <h1> ${prod.nome_produto}</h1>
+    <p>R$ ${prod.preco_produto}</p>
+    <p>${prod.opcoes_compra}</p>
+
+    <div id="btn-compraa">
+        <button class="button-compra"> Comprar </button>
+        <button class="button-compra"> Adicionar ao Carrinho </button>
+    </div>
+</div> `
 grid_produto2.innerHTML += produto
 }
 
@@ -114,14 +122,19 @@ const grid_produto3 = document.querySelector(".lista-produtos3")
 for(let i = 6; i < 10; i++){
     let prod = catalogo[i]
     let produto = ` <div class="produto">
-                        <div class="img-produto">
-                            <img src="${prod.imagem_produto}" alt="produto-7">
-                        </div>
-                    <h1> ${prod.nome_produto}</h1>
-                    <p>R$ ${prod.preco_produto}</p>
-                    <p>${prod.opcoes_compra}</p>
-                    <button class="button-compra"> Comprar </button>
-                    </div> `
+    <div class="img-produto">
+        <img src="${prod.imagem_produto}" alt="produto-7">
+    </div>
+
+    <h1> ${prod.nome_produto}</h1>
+    <p>R$ ${prod.preco_produto}</p>
+    <p>${prod.opcoes_compra}</p>
+
+    <div id="btn-compraa">
+        <button class="button-compra"> Comprar </button>
+        <button class="button-compra"> Adicionar ao Carrinho </button>
+    </div>
+</div> `
 grid_produto3.innerHTML += produto
 }
 
