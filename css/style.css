@@ -603,7 +603,7 @@ html {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(/somativo/img/fundo.png);
+    background: url(img/fundo.png);
     background-size: cover;
     background-position: center;
 }
