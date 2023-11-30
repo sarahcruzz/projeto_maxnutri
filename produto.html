@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/be07557a2e.js" crossorigin="anonymous"></script>
-    <script src="./js/dados.js" defer></script>
+    <script src="./js/produto.js" defer type="module"></script>
     <title> Produto </title>
 </head>
 <body>
@@ -50,20 +50,7 @@
                     <img src="/img/Imagens_produto/proteina/isolado.png" alt="furadeira bosch">
                 </div>
 
-                <div class="botos-prod">
-                    <div class="adic-carrinho">
-                        <p> Adicionar ao Carrinho </p>
-                    </div>
-
-                    <div class="quantidade-prod">
-                        <input type="number" name="quantidade" id="quant-prod">
-                    </div>
-                </div>
-
-                <div class="fav-prod">
-                    <a href=""><i class="fa-solid fa-cart-shopping" style="color: white;"></i></a>
-                    <button class="comprar"> Comprar </button>
-                </div> 
+                
             </div>
 
             <div class="container-info">
@@ -86,7 +73,7 @@
 
                 <div class="info-produto">
                     <p id="info-prod"> + DESCRIÇÃO </p>
-                    <p style="text-indent: 1.5rem;"> O diferencial da proteína isolada 
+                    <p style="text-indent: 1.5rem; font-size: 18px" > O diferencial da proteína isolada 
                         é que o produto oferece a maior concentração de proteínas
                         possível do mercado e baixíssima quantidade de carboidratos.
                         A composição de proteínas do whey protein isolado da Growth
@@ -94,7 +81,22 @@
                         quantidade de carboidratos e quantidades insignificantes de gordura.</p>
                 </div>
 
-            </div> -->
+                <div class="botos-prod">
+                    <div class="fav-prod">
+                        <button class="comprar"> Comprar </button>
+                    </div> 
+                    <div class="adic-carrinho">
+                        <button class="adic-carrinho"> Adicionar ao Carrinho </button>
+                    </div>
+
+                    <div class="quantidade-prod">
+                        <input type="number" name="quantidade" id="quant-prod">
+                    </div>
+                </div> -->
+
+               
+
+            </div>
         </div>    
     </main>
 

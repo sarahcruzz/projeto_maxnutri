@@ -3,9 +3,9 @@ import { catalogo} from "../js/dados.js";
 import { carregaCard,pegarCodProduto } from "../js/funcoes.js";
 
 // Selecao do local aonde os produtos serao inseridos
-let list_proteinas = catalogo.filter(produto => produto.categoria == "proteina")
-let list_vitaminas = catalogo.filter(produto => produto.categoria == "vitamina")
-let list_aminoacido = catalogo.filter(produto => produto.categoria == "aminoacido")
+let list_proteinas = catalogo.filter(produto => produto.categoria == "Proteína")
+let list_vitaminas = catalogo.filter(produto => produto.categoria == "Vitamina")
+let list_aminoacido = catalogo.filter(produto => produto.categoria == "Aminoácido")
 
 let gridProteinas = document.querySelector("#prod_proteinas")
 let gridVitaminas = document.querySelector("#prod_vitaminas")

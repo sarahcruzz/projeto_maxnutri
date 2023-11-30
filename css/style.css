@@ -259,6 +259,7 @@ nav a{
 .produto p{
     color:  white;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -449,57 +450,46 @@ nav a{
 
 .botos-prod{
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .imagem-prod img{ 
-    height: 450px;
+    height: 600px;
     margin: 50px 100px 50px 100px;
 }
 
 .main{
     display: flex;
     justify-content: space-around;
-    gap: 50px;
-    width: 1005;
+    gap: 80px;
 }
 
 .fav-prod{
     display: flex;
+    margin-right: 20px;
+    width: 100%;
+    height: 60px;    
+}
+
+.comprar{
+    display: flex;
+    width: 100%;
     background-color: #1E579C;
-    justify-content: center;
-    margin: 0 10px 50px 20px;
-    border: #24262b solid 1.5px;
-    width: 450px;
-    height: 40px;
-    border-radius: 5px;
-}
-
-.fav-prod a, p{
-    margin-top: 8px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-
-.adic-carrinho{
-    background-color: #24262b;
-    height: 40px;
     color: white;
-    width: 200px;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
 }
 
-.adic-carrinho p{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;  
+.adic-carrinho {
+    font-size: 20px;
+    background-color: #24262b;
+    width: 420px;
+    border-radius: 5px;
+    height: 60px;
     color: white;
 }
 
@@ -511,7 +501,8 @@ nav a{
 .quantidade-prod input{
     display: flex;
     justify-content: center;
-    width: 200px;
+    align-items: center;
+    width: 420px;
     border-radius: 5px;
 }
 
@@ -539,6 +530,7 @@ nav a{
     display: inline-block;
 }
 
+
 .info-produto{
     display: inline-block;
     margin: 40px 30px 15px 0px;
@@ -551,6 +543,7 @@ nav a{
 #info-prod{
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
 }
 
 .carac-tecnica p{
@@ -603,7 +596,7 @@ html {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(img/fundo.png);
+    background: url(/img/fundo.png);
     background-size: cover;
     background-position: center;
 }
@@ -940,4 +933,52 @@ body > .main-carrinho {
     background: #3bc55b;
   }
 
+#formulario{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+#formulario {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+ 
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+ 
+label {
+display: flex;
+width: 250px;
+font-size: 20px;
+height: 30px;
+margin-top: 10px;
+margin-bottom: 25px;
+}
+ 
+#formulario input {
+width: 750px;
+height: 5px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+border-radius: 10px;
+outline: none;
+border: 2px solid transparent;
+padding: 15px;
+font-size: 20px;
+color: #000000;
+transition: all 0.4s ease;
+}
+ 
+ 
 

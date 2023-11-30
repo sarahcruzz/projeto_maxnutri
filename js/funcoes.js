@@ -3,18 +3,18 @@
 export function carregaCard(listaProdutos,gridProduto){
 
     listaProdutos.forEach(produto => {
-        const html = ` <div class="produto" id="${produto.codigoProduto}">
+        const html = ` <div class="produto" id="${produto.cod_produto}">
              <div class="img-produto">
-                 <img src="${produto.imagem_produto}" alt="produto-7">
+                 <img src="${produto.imagem_produto}" id="${produto.cod_produto}" alt="produto-7">
              </div>
         
              <h1> ${produto.nome_produto}</h1>
-             <p> ${produto.preco_produto}</p>
+             <p>R$ ${produto.preco_produto} à vista</p>
              <p> ${produto.opcoes_compra}</p>
             
         
              <div id="btn-compraa">
-                 <button id="${produto.codigoProduto}" class="button-compra"> Comprar </button>
+                <a href="produto.html" ><button id="${produto.cod_produto}" class="button-compra"> Comprar </button></a>
              </div>
         </div> `
         gridProduto.innerHTML += html
@@ -33,7 +33,7 @@ export function pegarCodProduto(){
 }
 
 export function findProduto(listaProdutos, id){
-    let produto = listaProdutos.find(produto => produto.codigoProduto == id)
+    let produto = listaProdutos.find(produto => produto.cod_produto == id)
     return produto
 }
 
@@ -41,28 +41,15 @@ export function carregaProduto(produto,selecaoProduto){
 // html que carrega o produto na pagina do produto
 let html = `<div class="container-prod">
 <div class="imagem-prod">
-    <img src="${produto.imagem_produto}" alt="furadeira bosch">
+    <img src="${produto.imagem_produto}" >
 </div>
 
-<div class="botos-prod">
-    <div class="adic-carrinho">
-        <p> Adicionar ao Carrinho </p>
-    </div>
 
-    <div class="quantidade-prod">
-        <input type="number" name="quantidade" id="quant-prod">
-    </div>
-</div>
-
-<div class="fav-prod">
-    <a href=""><i class="fa-solid fa-cart-shopping" style="color: white;"></i></a>
-    <p style="color: white;"> Comprar </p>
-</div>
 </div>
 
 <div class="container-info">
 <div class="texto-prod">
-    <p> ${produto.nome_produto} </p>
+    <p> ${produto.nome_produto}</p>
 </div>
 
 <div class="avaliacao">
@@ -74,15 +61,23 @@ let html = `<div class="container-prod">
 </div>
 
 <div class="preco-prod">
-    <h3> ${produto.preco_produto} </h3>
-    <p> ${produto.opcoes_compra} </p>
+    <h3> R$ ${produto.preco_produto} reais à vista </h3>
+    <p>${produto.opcoes_compra}</p>
 </div>
 
 <div class="info-produto">
     <p id="info-prod"> + DESCRIÇÃO </p>
-    <p style="text-indent: 1.5rem;"> ${produto.descricao_produto} </p>
+    <p style="text-indent: 1.5rem; font-size: 18px" > ${produto.descricao_produto}</p>
 </div>
 
+<div class="botos-prod">
+    <div class="fav-prod">
+        <button class="comprar"> Comprar </button>
+    </div> 
+    
+    <div class="quantidade-prod">
+        <input type="number" name="quantidade" id="quant-prod" min="1" value="1" required>
+    </div>
 </div>`
 selecaoProduto.innerHTML = html // carrega o HTML no local selecionado
 }
